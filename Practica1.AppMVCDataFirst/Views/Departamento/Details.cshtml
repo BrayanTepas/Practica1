@@ -1,10 +1,10 @@
 ﻿@model Practica1.AppMVCDataFirst.Models.Departamento
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "detalles";
 }
 
-<h1>Details</h1>
+<h1>detalles del</h1>
 
 <div>
     <h4>Departamento</h4>
@@ -25,6 +25,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-warning mt-2">ir a editar</a> |
+    <a asp-action="Index" class="btn btn-success mt-2">ir al inicio</a>
 </div>

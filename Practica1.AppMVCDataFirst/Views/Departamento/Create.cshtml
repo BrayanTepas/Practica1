@@ -1,10 +1,10 @@
 ﻿@model Practica1.AppMVCDataFirst.Models.Departamento
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "crear";
 }
 
-<h1>Create</h1>
+<h1>formulario para crear</h1>
 
 <h4>Departamento</h4>
 <hr />
@@ -19,18 +19,18 @@
             </div>
             <div class="form-group">
                 <label asp-for="Descripcion" class="control-label"></label>
-                <input asp-for="Descripcion" class="form-control" />
+                <textarea asp-for="Descripcion" class="form-control"></textarea>
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="crear departamento" class="btn btn-dark mt-2" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-success mt-2">ir al inicio</a>
 </div>
 
 @section Scripts {
